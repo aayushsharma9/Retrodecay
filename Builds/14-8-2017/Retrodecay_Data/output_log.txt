@@ -1,0 +1,103 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 960M (ID=0x139b)
+    Vendor:   NVIDIA
+    VRAM:     4065 MB
+    Driver:   22.21.13.8205
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Projects\Unity\Retrodecay\Builds\14-8-2017\Retrodecay_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Projects\Unity\Retrodecay\Builds\14-8-2017\Retrodecay_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Projects\Unity\Retrodecay\Builds\14-8-2017\Retrodecay_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Projects\Unity\Retrodecay\Builds\14-8-2017\Retrodecay_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Projects\Unity\Retrodecay\Builds\14-8-2017\Retrodecay_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Projects\Unity\Retrodecay\Builds\14-8-2017\Retrodecay_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Projects\Unity\Retrodecay\Builds\14-8-2017\Retrodecay_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Projects\Unity\Retrodecay\Builds\14-8-2017\Retrodecay_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Projects\Unity\Retrodecay\Builds\14-8-2017\Retrodecay_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading D:\Projects\Unity\Retrodecay\Builds\14-8-2017\Retrodecay_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: D:\Projects\Unity\Retrodecay\Builds\14-8-2017\Retrodecay_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\Projects\Unity\Retrodecay\Builds\14-8-2017\Retrodecay_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: D:\Projects\Unity\Retrodecay\Builds\14-8-2017\Retrodecay_Data\Managed\TextMeshPro-1.0.55.2017.1.0b12.dll (this message is harmless)
+Loading D:\Projects\Unity\Retrodecay\Builds\14-8-2017\Retrodecay_Data\Managed\TextMeshPro-1.0.55.2017.1.0b12.dll into Unity Child Domain
+Platform assembly: D:\Projects\Unity\Retrodecay\Builds\14-8-2017\Retrodecay_Data\Managed\System.dll (this message is harmless)
+Platform assembly: D:\Projects\Unity\Retrodecay\Builds\14-8-2017\Retrodecay_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.350 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.031012 ms
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 2054 -> priority: 1 
+  Thread -> id: 248c -> priority: 1 
+  Thread -> id: 2114 -> priority: 1 
+  Thread -> id: 11e0 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 12.050172 ms
+
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 692.
+Total: 1.467654 ms (FindLiveObjects: 0.088493 ms CreateObjectMapping: 0.069530 ms MarkObjects: 0.980543 ms  DeleteObjects: 0.327111 ms)
+
+Speed increased to 2.3 & 4.3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 11.609679 ms
+
+Unloading 65 unused Assets to reduce memory usage. Loaded Objects now: 565.
+Total: 2.593185 ms (FindLiveObjects: 0.135901 ms CreateObjectMapping: 0.105876 ms MarkObjects: 1.842567 ms  DeleteObjects: 0.500938 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.091950 ms
+
+Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 723.
+Total: 1.977679 ms (FindLiveObjects: 0.110222 ms CreateObjectMapping: 0.070320 ms MarkObjects: 1.063111 ms  DeleteObjects: 0.732444 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.730765 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 740.
+Total: 1.308839 ms (FindLiveObjects: 0.092049 ms CreateObjectMapping: 0.068740 ms MarkObjects: 1.118419 ms  DeleteObjects: 0.027259 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.806617 ms
+
+Unloading 65 unused Assets to reduce memory usage. Loaded Objects now: 565.
+Total: 2.266074 ms (FindLiveObjects: 0.091259 ms CreateObjectMapping: 0.066370 ms MarkObjects: 1.570370 ms  DeleteObjects: 0.536098 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.206913 ms
+
+Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 723.
+Total: 1.944493 ms (FindLiveObjects: 0.095604 ms CreateObjectMapping: 0.076246 ms MarkObjects: 1.079703 ms  DeleteObjects: 0.691753 ms)
+
+Speed increased to 2.6 & 4.6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.187456 ms
+
+Unloading 65 unused Assets to reduce memory usage. Loaded Objects now: 565.
+Total: 2.448197 ms (FindLiveObjects: 0.088098 ms CreateObjectMapping: 0.071111 ms MarkObjects: 1.678222 ms  DeleteObjects: 0.608790 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.162271 ms
+
+Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 723.
+Total: 2.147555 ms (FindLiveObjects: 0.093234 ms CreateObjectMapping: 0.071901 ms MarkObjects: 1.293827 ms  DeleteObjects: 0.687012 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.872987 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 740.
+Total: 1.483456 ms (FindLiveObjects: 0.103506 ms CreateObjectMapping: 0.067950 ms MarkObjects: 1.267358 ms  DeleteObjects: 0.042666 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.854814 ms
+
+Unloading 65 unused Assets to reduce memory usage. Loaded Objects now: 565.
+Total: 2.578172 ms (FindLiveObjects: 0.138271 ms CreateObjectMapping: 0.085333 ms MarkObjects: 1.788839 ms  DeleteObjects: 0.563358 ms)
+
