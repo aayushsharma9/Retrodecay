@@ -10,16 +10,12 @@ public class GameManager : MonoBehaviour
     private float multiplier;
 
     private float t, d, l;
-    [SerializeField]
-    private float DecayInterval;
-    [SerializeField]
-    private Text EnergyLevelText, LevelInfo, scoreText, HighScoreText, finalScoreText, countdownText;
-    [SerializeField]
-    private GameObject spawner1, spawner2, spawnerSet;
-    [SerializeField]
-    private GameObject pausePanel, GameOverPanel, CountDownPanel;
-    [SerializeField]
-    private AnimationClip pausePanelExitAnim, GOPanelExitAnim;
+    [SerializeField] private float DecayInterval;
+    [SerializeField] private Text scoreText, HighScoreText, finalScoreText, countdownText;
+    [SerializeField] private GameObject[] levelCountIcon;
+    [SerializeField] private GameObject spawner1, spawner2, spawnerSet;
+    [SerializeField] private GameObject pausePanel, GameOverPanel, CountDownPanel;
+    [SerializeField] private AnimationClip pausePanelExitAnim, GOPanelExitAnim;
     private bool isPaused, gameOver, hasStarted;
 
 
@@ -53,10 +49,12 @@ public class GameManager : MonoBehaviour
         Score = 0;
         multiplier = 1;
         currentLevel = 1; // TEMPORARY FIX
-        LevelInfo.text = "LEVEL 1"; 
         HighScore = PlayerPrefs.GetInt("HighScore");
 
-        scoreText.text = "" + Score;
+        //scoreText.text = "" + Score;
+
+        for (int i = 0; i < 3; i++)
+            levelCountIcon[i].SetActive(false);
 
         InitializeLevel(1);
 
@@ -79,7 +77,8 @@ public class GameManager : MonoBehaviour
         d += Time.deltaTime;
         l += Time.deltaTime;
 
-        scoreText.text = "" + Score;
+        if (hasStarted)
+            scoreText.text = "" + Score;
 
         if (t >= DecayInterval)
         {
@@ -91,8 +90,6 @@ public class GameManager : MonoBehaviour
             }
             t = 0;
         }
-
-        EnergyLevelText.text = "" + EnergyLevel;
 
         if (EnergyLevel <= 0) //GAME OVER
         {
@@ -142,9 +139,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public static void AddEnergy(int e)
+    public static void AddEnergy(int _e)
     {
-        EnergyLevel += e;
+        EnergyLevel += _e;
     }
 
     void clearPickups()
@@ -169,25 +166,23 @@ public class GameManager : MonoBehaviour
             spawner2.GetComponent<Transform>().position = new Vector3(0, 0, 0);
         }
 
-        if (_level == 2)
+        else if (_level == 2)
         {
-            LevelInfo.text = "LEVEL 2";
             DecayInterval /= 1.2f;
             PickSpawner.partRotationSpeed = 300;
             spawner2.SetActive(true);
-            LevelInfo.GetComponent<Animator>().enabled = true;
             spawnerSet.GetComponent<Animator>().enabled = true;
-            LevelInfo.GetComponent<Animator>().Play("LevelChange");
             spawnerSet.GetComponent<Animator>().Play("SourceSplit", -1, 0);
             spawnerSet.GetComponent<Animator>().StopPlayback();
+            levelCountIcon[_level - 1].SetActive(true);
         }
 
         else if (_level == 3)
         {
-            LevelInfo.text = "LEVEL 3";
             DecayInterval /= 1.2f;
-            LevelInfo.GetComponent<Animator>().Play("LevelChange");
+            levelCountIcon[_level - 1].SetActive(true);
         }
+
     }
 
     private void InitializeLevelOnStart(int _level)
@@ -265,6 +260,7 @@ public class GameManager : MonoBehaviour
 
         countdownText.text = "";
         CountDownPanel.SetActive(false);
+        levelCountIcon[0].SetActive(true);
         hasStarted = true;
         Time.timeScale = 1;
     }

@@ -2,8 +2,7 @@
 
 public class PickBehaviour : MonoBehaviour
 {
-    [SerializeField]
-    private float speed, acceleration;
+    [SerializeField] private float speed, acceleration;
 
     private void Start()
     {

@@ -5,8 +5,7 @@ using UnityEngine;
 public class TouchControl : MonoBehaviour
 {
 
-    [SerializeField]
-    private AnimationClip destroyAnim;
+    [SerializeField] private AnimationClip destroyAnim;
 
     private void Update()
     {

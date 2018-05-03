@@ -4,10 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField]
-    private AnimationClip menuExitAnim;
-    [SerializeField]
-    private GameObject MenuPanel, ExitPanel;
+    [SerializeField] private AnimationClip menuExitAnim;
+    [SerializeField] private GameObject MenuPanel, ExitPanel;
     private bool exitConf;
 
     private void Start()

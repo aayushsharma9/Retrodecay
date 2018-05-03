@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class MouseControl : MonoBehaviour
 {
-    [SerializeField]
-    private AnimationClip destroyAnim;
+    [SerializeField] private AnimationClip destroyAnim;
+    [SerializeField] private GameObject scoreText;
 
     private void Update()
     {
@@ -20,6 +20,7 @@ public class MouseControl : MonoBehaviour
                     StartCoroutine(DestroyThis(hit.transform.gameObject));
                     GameManager.AddEnergy(2);
                     GameManager.Score++;
+                    scoreText.GetComponent<Animator>().Play("ScoreIncrease");
 
                     if (GameManager.Score > GameManager.HighScore)
                     {
@@ -51,7 +52,6 @@ public class MouseControl : MonoBehaviour
             pickInstance.GetComponent<BoxCollider>().size = new Vector3(0.4f, 0.4f, 0.1f);
         }
     }
-
 
     private IEnumerator DestroyThis(GameObject _energy)
     {

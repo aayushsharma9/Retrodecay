@@ -2,15 +2,11 @@
 
 public class PickSpawner : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject energy, negative;
-    [SerializeField]
-    private GameObject Inner, Outer;
+    [SerializeField] private GameObject energy, negative;
+    [SerializeField] private GameObject Inner, Outer;
     public static float partRotationSpeed;
-    [SerializeField]
-    private static float maxSpeed, minSpeed;
-    [SerializeField]
-    private float spawnInterval;
+    [SerializeField] private static float maxSpeed, minSpeed;
+    [SerializeField] private float spawnInterval;
     private float t = 0, s = 0;
     float Speed;
 
@@ -72,7 +68,7 @@ public class PickSpawner : MonoBehaviour
 
     public static void ResetPickSpeed()
     {
-        minSpeed = 2;
-        maxSpeed = 4;
+        minSpeed = 3;
+        maxSpeed = 5;
     } 
 }
